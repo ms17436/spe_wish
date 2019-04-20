@@ -24,5 +24,5 @@ services:
     volumes:
       - /data/wishlist-app
     command: cd 
-    command: java -cp target/WishlistService-0.0.1-SNAPSHOT.jar org.acms.App
+    command: java -cp target/WishlistService-0.0.1-SNAPSHOT.jar org.acms.WishlistService.App
     #command: java -jar /usr/app/WishlistService.jar
