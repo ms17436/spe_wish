@@ -23,4 +23,5 @@ services:
       - 3000:3000
     volumes:
       - /data/wishlist-app
-    command: java -jar /usr/app/WishlistService.jar
+    command: java -cp ./target/WishlistService.jar org.acms.App
+    #command: java -jar /usr/app/WishlistService.jar
