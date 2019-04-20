@@ -1,0 +1,26 @@
+version: '2.0'
+
+services:
+  mysql-docker-container:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root123
+      - MYSQL_DATABASE=WishlistService
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=1969
+    ports:
+      - 3306:3306
+    volumes:
+      - /data/mysql
+  wishlist-app:
+    image: wish3
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql-docker-container
+    ports:
+      - 3000:3000
+    volumes:
+      - /data/wishlist-app
+    command: java -jar /usr/app/WishlistService.jar
