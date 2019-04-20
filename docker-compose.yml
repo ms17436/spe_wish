@@ -13,7 +13,7 @@ services:
     volumes:
       - /data/mysql
   wishlist-app:
-    image: wish3
+    image: spewish
     build:
       context: ./
       dockerfile: Dockerfile
