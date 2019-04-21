@@ -17,7 +17,6 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    pull:true
     depends_on:
       - mysql-docker-container
     ports:
