@@ -1,4 +1,4 @@
 FROM java:8-jdk-alpine
-ADD ./target/WishlistService.war /usr/app/wishme.war
+COPY ./target/WishlistService.jar /usr/app/
 WORKDIR /usr/app
-CMD ["java","-jar","wishme.war"]
+#CMD ["java","-jar","wishme.war"]
