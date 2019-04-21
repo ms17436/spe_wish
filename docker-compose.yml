@@ -14,7 +14,6 @@ services:
       - /data/mysql
   wishlist-app:
     image: mani0509/spe_wishlist
-    pull: true
     depends_on:
       - mysql-docker-container
     ports:
