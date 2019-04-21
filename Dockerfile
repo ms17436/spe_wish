@@ -1,3 +1,3 @@
 FROM java:8-jdk-alpine
-ADD ./target/WishlistService.jar wishme.jar
-ENTRYPOINT ["java","-jar","wishme.jar"]
+ADD ./target/WishlistService.war wishme.war
+ENTRYPOINT ["java","-jar","wishme.war"]
