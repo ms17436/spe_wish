@@ -20,6 +20,6 @@ services:
     depends_on:
       - mysql-docker-container
     ports:
-      - 3000:3000
+      - 9090:9090
     volumes:
       - /data/wishlist-app
