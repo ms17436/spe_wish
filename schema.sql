@@ -1,5 +1,6 @@
 -- MySQL Workbench Forward Engineering
-
+CREATE DATABASE IF NOT EXISTS WishlistService;
+GRANT ALL PRIVILIGES on WishlistService.* TO 'root'@'localhost' IDENTIFIED BY 'root123' WITH GRANT OPTION;
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
@@ -11,9 +12,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema WishlistService
 -- -----------------------------------------------------
-CREATE DATABASE IF NOT EXISTS WishlistService;
-GRANT ALL PRIVILIGES on WishlistService.* TO 'root'@'%' IDENTIFIED BY 'root123' WITH GRANT OPTION;
-CREATE SCHEMA IF NOT EXISTS `WishlistService` DEFAULT CHARACTER SET utf8 ;
+
 CREATE SCHEMA IF NOT EXISTS `WishlistService` DEFAULT CHARACTER SET utf8 ;
 USE `WishlistService` ;
 
