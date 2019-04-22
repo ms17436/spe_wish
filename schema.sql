@@ -12,7 +12,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- Schema WishlistService
 -- -----------------------------------------------------
 CREATE DATABASE IF NOT EXISTS WishlistService;
-GRANT ALL PRIVILIGES on WishlistService.* TO 'root'@'%';
+GRANT ALL PRIVILIGES on WishlistService.* TO 'root'@'%' IDENTIFIED BY 'root123' WITH GRANT OPTION;
 CREATE SCHEMA IF NOT EXISTS `WishlistService` DEFAULT CHARACTER SET utf8 ;
 CREATE SCHEMA IF NOT EXISTS `WishlistService` DEFAULT CHARACTER SET utf8 ;
 USE `WishlistService` ;
