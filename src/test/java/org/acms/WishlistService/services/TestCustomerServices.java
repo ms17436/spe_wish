@@ -1,9 +1,10 @@
 package org.acms.WishlistService.services;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 import org.acms.WishlistService.model.Login;
 import org.acms.WishlistService.services.CustomerServices;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Assert;
+import org.junit.Test;
 public class TestCustomerServices {
 
     @Test
