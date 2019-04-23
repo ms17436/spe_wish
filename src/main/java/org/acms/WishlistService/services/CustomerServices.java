@@ -69,17 +69,17 @@ public class CustomerServices {
 	@Path("/authenticate")
 	@Consumes("application/json")
 	@Produces("application/json")
-	public Login getUserByLoginID(Login user)
+	public String getUserByLoginID(Login user)
 	{
 		LoginDAO dao = new LoginDAO();
 		Login user_data = dao.getUser(user);
-		
+		String res="sucess";
 		if(user_data != null)
 		{
 			if(!user.getPassword().equals(user_data.getPassword()))
-				return user;
+				return null;
 			else
-				return user_data;
+				return res;
 		}
 		else
 			return null;
