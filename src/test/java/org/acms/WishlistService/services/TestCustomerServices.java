@@ -11,7 +11,7 @@ public class TestCustomerServices {
 	Login user=new Login();
 	user.login_id="Deepika";
 	user.password="12345";
-	String result=CustomerServices.getUserByLoginID(user)
+	String result=CustomerServices.getUserByLoginID(user);
         assertEquals("sucess", result);
     }
 
