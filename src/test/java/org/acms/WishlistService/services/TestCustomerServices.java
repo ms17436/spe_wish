@@ -13,7 +13,7 @@ public class TestCustomerServices {
 	user.setLogin_id("Deepika");
 	user.setPassword("12345");
 	CustomerServices cust=new CustomerServices();
-        assertEquals("sucess", cust.getUserByLoginID(user));
+        Assert.assertEquals("sucess", cust.getUserByLoginID(user));
     }
 
 }
