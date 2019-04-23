@@ -1,5 +1,4 @@
 package org.acms.WishlistService.services;
-import org.junit.Test;
 import org.junit.jupiter.api.Test;
 import org.acms.WishlistService.model.Login;
 import org.acms.WishlistService.services.CustomerServices;
