@@ -1,7 +1,7 @@
 package org.acms.WishlistService.services;
 
 import org.junit.jupiter.api.Test;
-
+import org.acms.WishlistService.model.Login;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestCustomerServices {
