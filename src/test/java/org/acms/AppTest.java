@@ -1,4 +1,4 @@
-package com.mkyong;
+package org.acms;
 
 import org.junit.Assert;
 import org.junit.Test;
