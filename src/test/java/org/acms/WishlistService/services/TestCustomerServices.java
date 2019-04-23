@@ -9,8 +9,8 @@ public class TestCustomerServices {
     @Test
     public void testLogin() {
 	Login user=new Login();
-	user.login_id="Deepika";
-	user.password="12345";
+	user.setLogin_id("Deepika");
+	user.setPassword("12345");
 	String result=CustomerServices.getUserByLoginID(user);
         assertEquals("sucess", result);
     }
