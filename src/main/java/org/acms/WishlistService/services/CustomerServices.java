@@ -73,13 +73,13 @@ public class CustomerServices {
 	{
 		LoginDAO dao = new LoginDAO();
 		Login user_data = dao.getUser(user);
-		String res="sucess";
+		
 		if(user_data != null)
 		{
 			if(!user.getPassword().equals(user_data.getPassword()))
-				return null;
+				return user;
 			else
-				return res;
+				return user_data;
 		}
 		else
 			return null;
