@@ -69,7 +69,7 @@ public class CustomerServices {
 	@Path("/authenticate")
 	@Consumes("application/json")
 	@Produces("application/json")
-	public String getUserByLoginID(Login user)
+	public Login getUserByLoginID(Login user)
 	{
 		LoginDAO dao = new LoginDAO();
 		Login user_data = dao.getUser(user);
