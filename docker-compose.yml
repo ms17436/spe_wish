@@ -11,7 +11,7 @@ services:
     volumes:
       - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
   wishlist-app:
-    image: mani0509/spe_wishlist
+    image: manisha2506/wishlist
     depends_on:
       - mysql-docker-container
     ports:
