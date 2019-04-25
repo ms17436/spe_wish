@@ -184,6 +184,7 @@ START TRANSACTION;
 USE `WishlistService`;
 INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('deepika', '12345');
 INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('manisha', '12345');
+INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('vaishali', '12345');
 INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('Harika', '12345');
 INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('Thangaraju', '12345');
 INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('Jyoti', '12345');
