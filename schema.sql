@@ -184,8 +184,11 @@ START TRANSACTION;
 USE `WishlistService`;
 INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('deepika', '12345');
 INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('manisha', '12345');
-INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('vaishali', '12345');
-
+INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('Harika', '12345');
+INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('Thangaraju', '12345');
+INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('Jyoti', '12345');
+INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('Divyanshi', '12345');
+INSERT INTO `WishlistService`.`Login` (`login_id`, `password`) VALUES ('Damini', '12345');
 COMMIT;
 
 
@@ -197,6 +200,10 @@ USE `WishlistService`;
 INSERT INTO `WishlistService`.`Customer` (`id`, `login_id`, `email_id`, `phone_no`, `dob`, `gender`, `name`) VALUES (1, 'deepika', 'deepika@gmail.com', '9611529722', '1997-10-25', 'F', 'Deepika Alavala');
 INSERT INTO `WishlistService`.`Customer` (`id`, `login_id`, `email_id`, `phone_no`, `dob`, `gender`, `name`) VALUES (2, 'manisha', 'manisha@gmail.com', '7730069061', '1996-06-11', 'F', 'Manisha Sinha');
 INSERT INTO `WishlistService`.`Customer` (`id`, `login_id`, `email_id`, `phone_no`, `dob`, `gender`, `name`) VALUES (3, 'vaishali', 'vaishali@gmail.com', '6301319864', '1996-03-09', 'F', 'Vaishali Walia');
+INSERT INTO `WishlistService`.`Customer` (`id`, `login_id`, `email_id`, `phone_no`, `dob`, `gender`, `name`) VALUES (4, 'Harika', 'harika@gmail.com', '6301319854', '1996-03-10', 'F', 'Harika');
+INSERT INTO `WishlistService`.`Customer` (`id`, `login_id`, `email_id`, `phone_no`, `dob`, `gender`, `name`) VALUES (5, 'Thangaraju', 'Thangaraju@gmail.com', '6301317864', '1996-03-15', 'F', 'Thangaraju');
+INSERT INTO `WishlistService`.`Customer` (`id`, `login_id`, `email_id`, `phone_no`, `dob`, `gender`, `name`) VALUES (6, 'Divyanshi', 'Divyanshi@gmail.com', '6301369864', '1996-03-14', 'F', 'Divyanshi Singhal');
+INSERT INTO `WishlistService`.`Customer` (`id`, `login_id`, `email_id`, `phone_no`, `dob`, `gender`, `name`) VALUES (7, 'Damini', 'Damini@gmail.com', '6301369864', '1996-03-16', 'F', 'Damini Saxena');
 
 COMMIT;
 
@@ -225,7 +232,16 @@ START TRANSACTION;
 USE `WishlistService`;
 INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (1, 'Birthday', 'deepika', 'ongoing');
 INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (2, 'Anniversary', 'vaishali', 'ongoing');
-
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (3, 'Fashion', 'manisha', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (4, 'Friendship', 'manisha', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (5, 'Anniversary', 'manisha', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (6, 'Friendship', 'Divyanshi', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (7, 'Anniversary', 'Divyanshi', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (8, 'Need', 'Damini', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (9, 'Fashion', 'Divyanshi', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (10, 'Anniversary', 'vaishali', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (11, 'Friendship', 'vaishali', 'ongoing');
+INSERT INTO `WishlistService`.`Wishlist` (`wishlist_id`, `name`, `creator_id`, `status`) VALUES (12, 'Fashion', 'vaishali', 'ongoing');
 COMMIT;
 
 
@@ -236,6 +252,17 @@ START TRANSACTION;
 USE `WishlistService`;
 INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (1, 1, 1, 1, DEFAULT, 'IIIT Bangalore', 'Birthday');
 INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (2, 2, 1, 2, DEFAULT, 'IIT Hyderabad', 'Birthday');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (3, 3, 3, 2, DEFAULT, 'IIT Hyderabad', 'Faishon');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (4, 4, 1, 2, DEFAULT, 'IIT Hyderabad', 'Birthday');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (5, 5, 3, 2, DEFAULT, 'IIT Hyderabad', 'Fashion');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (6, 6, 3, 2, DEFAULT, 'IIT Hyderabad', 'Fashion');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (7, 7, 1, 2, DEFAULT, 'IIT Hyderabad', 'Birthday');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (8, 8, 1, 2, DEFAULT, 'IIT Hyderabad', 'Birthday');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (9, 1, 10, 2, DEFAULT, 'IIT Hyderabad', 'Anniversary');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (10, 2, 10, 2, DEFAULT, 'IIT Hyderabad', 'Anniversary');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (11, 3, 10, 2, DEFAULT, 'IIT Hyderabad', 'Anniversary');
+INSERT INTO `WishlistService`.`WishlistProduct` (`id`, `product_id`, `wishlist_id`, `quantity`, `remaining_qty`, `address`, `reason`) VALUES (12, 4, 10, 2, DEFAULT, 'IIT Hyderabad', 'Anniversary');
+
 
 COMMIT;
 
